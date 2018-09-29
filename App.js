@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, Image } from 'react-native';
 import LotsOfGreetings from './components/list';
 import BlinkApp from './components/blink';
 import LotsOfStyles from './components/styles';
+import FixedDimensionsBasics from './components/fixedDimensions';
 
 export default class App extends React.Component {
   render() {
@@ -11,7 +12,7 @@ export default class App extends React.Component {
     }
     return (
       <View style={styles.container}>
-        <Image source={pic} style={{width: 193, height: 110}}/>
+        <FixedDimensionsBasics />
       </View>
     );
   }
