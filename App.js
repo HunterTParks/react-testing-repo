@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
-import LotsOfGreetings from './components/list'
+import LotsOfGreetings from './components/list';
+import BlinkApp from './components/blink';
 
 export default class App extends React.Component {
   render() {
@@ -12,6 +13,7 @@ export default class App extends React.Component {
         <Text>Open up App.js to start working on your app!</Text>
         <Image source={pic} style={{width: 193, height: 110}}/>
         <LotsOfGreetings />
+        <BlinkApp style={{width: 193, height: 110}}/>
       </View>
     );
   }
