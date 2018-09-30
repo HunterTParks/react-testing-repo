@@ -4,6 +4,7 @@ import LotsOfGreetings from './components/list';
 import BlinkApp from './components/blink';
 import LotsOfStyles from './components/styles';
 import FixedDimensionsBasics from './components/fixedDimensions';
+import FlexDimensionsBasics from './components/flexDimensions';
 
 export default class App extends React.Component {
   render() {
@@ -12,7 +13,7 @@ export default class App extends React.Component {
     }
     return (
       <View style={styles.container}>
-        <FixedDimensionsBasics />
+        <FlexDimensionsBasics />
       </View>
     );
   }
